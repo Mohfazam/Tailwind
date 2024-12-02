@@ -8,7 +8,11 @@ function App() {
 
   return (
     <>
-      <div className='bg-blue-300 text-black'>Hello World</div>
+      <div className='flex justify-between'>
+        <div className='bg-blue-300'>Child 1</div>
+        <div className='bg-blue-500'>Child 2</div>
+        <div className='bg-blue-900'>Child 3</div>
+      </div>
     </>
   )
 }
