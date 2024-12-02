@@ -8,10 +8,10 @@ function App() {
 
   return (
     <>
-      <div className='grid grid-cols-12'>
-        <div className='bg-blue-300 col-span-5'>Child 1</div>
-        <div className='bg-blue-500 col-span-5'>Child 2</div>
-        <div className='bg-blue-900 col-span-2'>Child 3</div>
+      <div className='sm:flex sm:justify-center'>
+        <div className='bg-green-300'>Child 1</div>
+        <div className='bg-red-300'>Child 2</div>
+        <div className='bg-yellow-300'>Child 3</div>
       </div>
     </>
   )
