@@ -30,9 +30,15 @@ function App() {
       </div>
       <Otp />
       <br />
-      <div>
+      <div className="absolute top-[430px] text-white text-center text-lg">
         {count > 0 ? `Time remaining: ${count}` : <h1 className="text-white text-lg">Time is Up</h1>}
+
+        <div className="flex justify-center items-center mt-4">
+        <button className=" text-white text-lg bg-blue-400 rounded-md p-2 w-[400px] hover:bg-blue-600">Continue</button>
       </div>
+      </div>
+
+      
     </div>
     
   );
