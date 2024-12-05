@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { Otp } from "./components/otp";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex justify-center items-center bg-blue-800 w-screen h-screen">
+      <div className="absolute text-white top-[100px]">
+        <h1 className="text-4xl">Webinar.gg</h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="absolute top-[200px]">
+        <h1 className="text-white text-4xl">Check your Email for the code</h1>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+    
+  );
 }
 
-export default App
+export default App;
+
+
+
+
+// import { useState } from "react";
+// import "./App.css";
+
+// function App() {
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div className="flex justify-center items-center bg-blue-800 w-screen h-screen">
+//       <div className="absolute top-[100px] text-white">
+//         <h1 className="text-4xl">Webinar.gg</h1>
+//       </div>
+
+//       <div className="absolute top-[200px] text-white">
+//         <h1 className="text-2xl">Check your Email for the code</h1>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
