@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import { Basic_project } from '../src/answers/1-basic-project'
-import './App.css'
+import { useState } from "react";
+import { Test1 } from "../src/components/test1";
+import { Test2 } from "../src/components/test2";
+import "./App.css";
 
 function App() {
-  
-
   return (
     <>
-      <Basic_project />
+      <Test1>
+        <Test2 />
+      </Test1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
